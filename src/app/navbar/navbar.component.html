@@ -1,0 +1,49 @@
+<div class="desktop-and-tablet">
+  <nav class="navbar navbarStyle">
+    <div class="container">
+      <a class="navbar-brand" href="" routerLink="/home">
+        <img class="bako-blue" src="../../../assets/imgs/logo/bakoBlue.png" alt="" width="auto" height="auto">
+        <img class="bako-white" src="../../../assets/imgs/logo/bakoWhite.png" alt="" width="auto" height="auto">
+      </a>
+      <ul class="nav justify-content-center">
+        <button (click)="gtaccueil()" routerLink="/home" *ngIf="!home" class="bakoNavBtn">ACCUEIL</button>
+        <button (click)="gtaccueil()" routerLink="/home" *ngIf="home" class="bakoNavBtn souligne">ACCUEIL</button>
+        <button (click)="gtbako()" routerLink="/bako" *ngIf="!bako" class="bakoNavBtn">BAKO B1</button>
+        <button (click)="gtbako()" routerLink="/bako" *ngIf="bako" class="bakoNavBtn souligne">BAKO B1</button>
+        <button (click)="gttech()" routerLink="/tech" *ngIf="!tech" class="bakoNavBtn">DEEP-TECH</button>
+        <button (click)="gttech()" routerLink="/tech" *ngIf="tech" class="bakoNavBtn souligne">DEEP-TECH</button>
+        <button (click)="gtnews()" routerLink="/news" *ngIf="!news" class="bakoNavBtn">NEWS</button>
+        <button (click)="gtnews()" routerLink="/news" *ngIf="news" class="bakoNavBtn souligne">NEWS</button>
+      </ul>
+      <ul class="nav justify-content-center">
+        <button (click)="gtorder()" *ngIf="!order" routerLink="/order" class="bakoPreorderBtn">PRE-ORDER</button>
+        <button (click)="gtorder()" *ngIf="order" routerLink="/order" class="bakoPreorderBtn preorder">PRE-ORDER</button>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="mobile-display">
+  <nav class="navbar mbNavbarStyle">
+    <div class="container-fluid d-flex justify-content-center flex-direction-column">
+      <div class="row">
+        <a class="navbar-brand" href="#">
+          <img src="../../assets/imgs/logo/logo.png" alt="" width="auto" height="30px">
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-12 mt-2">
+          <ul class="nav justify-content-center">
+            <button (click)="gtaccueil()" routerLink="/home" *ngIf="!home" class="bakoNavBtn">ACCUEIL</button>
+            <button (click)="gtaccueil()" routerLink="/home" *ngIf="home" class="bakoNavBtn souligne">ACCUEIL</button>
+            <button (click)="gtbako()" routerLink="/bako" *ngIf="!bako" class="bakoNavBtn">BAKO B1</button>
+            <button (click)="gtbako()" routerLink="/bako" *ngIf="bako" class="bakoNavBtn souligne">BAKO B1</button>
+            <button (click)="gttech()" routerLink="/tech" *ngIf="!tech" class="bakoNavBtn">DEEP-TECH</button>
+            <button (click)="gttech()" routerLink="/tech" *ngIf="tech" class="bakoNavBtn souligne">DEEP-TECH</button>
+            <button (click)="gtnews()" routerLink="/news" *ngIf="!news" class="bakoNavBtn">NEWS</button>
+            <button (click)="gtnews()" routerLink="/news" *ngIf="news" class="bakoNavBtn souligne">NEWS</button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

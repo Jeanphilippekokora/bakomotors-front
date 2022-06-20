@@ -1,0 +1,147 @@
+.backgroundFrame{
+width:100%;
+min-height:calc(35vh - 0px);
+max-height:calc(35vh - 0px);
+overflow-x:hidden;
+overflow-y:hidden;
+}
+
+.backgroundRow{
+width:100%;
+height:auto;
+}
+
+.backgroundImage{
+width:100%;
+height:auto;
+}
+
+.rowAbsolute{
+top:0;
+left:0;
+height:35vh;
+z-index:99;
+}
+
+.outline{
+border:2px solid black !important;
+}
+
+.mbDiscoverBtn{
+background:white;
+outline:none;
+border:0;
+color:black;
+font-weight:500;
+font-size:12px;
+padding:7px 20px 7px 20px;
+border-radius:30px;
+margin-left:10px;
+}
+
+.mobileRow{
+background:rgba(0, 0, 0, 0.5);
+}
+
+.cardLink{
+cursor:pointer;
+border-radius:10px;
+}
+
+.opacity-5{
+opacity:0.8;
+}
+
+.backgroundAbsolute{
+height:35vh;
+position:absolute;
+z-index:2;
+background-image: linear-gradient(to right top, #1575b7, #0d5a8c, #0b4164, #09283e, #02111c);
+opacity:0.4;
+}
+
+.newsCard{
+border-radius:10px;
+}
+
+.mb-viewerImageStyle{
+border-top-left-radius:10px !important;
+border-top-right-radius:10px !important;
+}
+
+.suggestionFrame{
+min-height:calc(90vh - 0px);
+max-height:calc(90vh - 0px);
+width:100%;
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+.usernameNavModal{
+font-size:15px;
+}
+
+.suggestionFrame::-webkit-scrollbar {
+  width: 7px;
+}
+
+.suggestionFrame::-webkit-scrollbar-thumb {
+  border-radius:30px !important;
+}
+
+.suggestionRow{
+height:auto;
+width:100%;
+}
+
+
+.playButton{
+background:white;
+border:0;
+height:35px;
+width:35px;
+color:black;
+outline:none;
+border-radius:50%;
+position:absolute;
+top:32.5px;
+left:32.5px;
+}
+
+.suggestionCard:hover{
+cursor:pointer;
+text-decoration:underline !important;
+}
+
+.suggestionCard:hover .playButton{
+opacity:0;
+transition:0.2s;
+}
+
+.overTextSuggestion{
+display: -webkit-box;
+max-width: 250px;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+.suggestionAvatar{
+height:100px !important;
+width:100px !important;
+border-radius:5px !important;
+}
+
+@media screen and (min-width:1025px){
+  .desktopMargin{
+    margin:0 !important;
+    padding:0 !important;
+  }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px){
+  .desktopMargin{
+    margin:0 !important;
+    padding:0 !important;
+  }
+}

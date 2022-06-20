@@ -1,0 +1,90 @@
+<div class="container-fluid desktopMargin">
+  <div class="row position-relative">
+    <div class="backgroundFrame p-0 d-flex align-items-center">
+      <div class="backgroundRow">
+        <img class="backgroundImage" src="../../assets/imgs/img11.jpg"/>
+      </div>
+    </div>
+    <div class="backgroundAbsolute"></div>
+    <div class="row d-flex justify-content-center align-items-center position-absolute mobileRow rowAbsolute">
+      <div class="col-12 text-center mt-4">
+        <h4 class="color-white" align="center">Bako news</h4>
+        <p class="color-white">discover all the news of bako motors. A journey of innovation.</p>
+      </div>
+      <div class="col-12 d-flex justify-content-center" style="margin-top:-50px;">
+        <button (click)="changeDix()" *ngIf="!bDix" class="mbDiscoverBtn">AWARDS</button>
+        <button (click)="changeDix()" *ngIf="bDix" class="mbDiscoverBtn outline">AWARDS</button>
+        <button (click)="changeVingt()" *ngIf="!bVingt" class="mbDiscoverBtn">CERTIFICATES</button>
+        <button (click)="changeVingt()" *ngIf="bVingt" class="mbDiscoverBtn outline">CERTIFICATES</button>
+        <button (click)="changeTrente()" *ngIf="!bTrente" class="mbDiscoverBtn">PARTNERS</button>
+        <button (click)="changeTrente()" *ngIf="bTrente" class="mbDiscoverBtn outline">PARTNERS</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12">
+      <mat-card class="newsCard mb-4">
+        <mat-card-content>
+          <video mat-card-image class="mb-viewerImageStyle" preload="metadata" controls controlsList="nodownload">
+            <source src="../../assets/videos/bk2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </mat-card-content>
+        <mat-card-header>
+          <mat-card-title><div>Le lorem ipsum est, en imprimerie, une suite</div></mat-card-title>
+          <mat-card-subtitle><div>Le lorem ipsum est, en imprimerie, une suite</div></mat-card-subtitle>
+          <mat-card-subtitle><div>12/05/2022</div></mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12">
+      <div class="suggestionFrame">
+        <div class="suggestionRow">
+          <mat-card class="p-0 suggestionCard mb-2 notMatStyle">
+            <mat-card-header>
+              <img class="suggestionAvatar" mat-card-avatar src="../../assets/imgs/img15.jpg">
+              <mat-card-title class="usernameNavModal"><div class="overTextSuggestion">titre de la video</div></mat-card-title>
+              <mat-card-subtitle><div class="overTextSuggestion">Voici le texte de ma publciation. C'est trop cool!! Don j'ecoute de la musique en travaillant et j'ecris du long texte pour tester si ça passe.</div></mat-card-subtitle>
+              <mat-card-subtitle><div class="overTextSuggestion">12/05/2022</div></mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+          <mat-card class="p-0 suggestionCard mb-2 notMatStyle">
+            <mat-card-header>
+              <img class="suggestionAvatar" mat-card-avatar src="../../assets/imgs/img10.jpg">
+              <mat-card-title class="usernameNavModal"><div class="overTextSuggestion">titre de l'article</div></mat-card-title>
+              <mat-card-subtitle><div class="overTextSuggestion">Voici le texte de ma publciation. C'est trop cool!! Don j'ecoute de la musique en travaillant et j'ecris du long texte pour tester si ça passe.</div></mat-card-subtitle>
+              <mat-card-subtitle><div class="overTextSuggestion">12/05/2022</div></mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+          <mat-card class="p-0 suggestionCard mb-2 notMatStyle">
+            <mat-card-header>
+              <img class="suggestionAvatar" mat-card-avatar src="../../assets/imgs/img4.png">
+              <mat-card-title class="usernameNavModal"><div class="overTextSuggestion">titre de l'article</div></mat-card-title>
+              <mat-card-subtitle><div class="overTextSuggestion">Voici le texte de ma publciation. C'est trop cool!! Don j'ecoute de la musique en travaillant et j'ecris du long texte pour tester si ça passe.</div></mat-card-subtitle>
+              <mat-card-subtitle><div class="overTextSuggestion">12/05/2022</div></mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+          <mat-card class="p-0 suggestionCard mb-2 notMatStyle">
+            <mat-card-header>
+              <img class="suggestionAvatar" mat-card-avatar src="../../assets/imgs/img6.jpg">
+              <mat-card-title class="usernameNavModal"><div class="overTextSuggestion">titre de l'article</div></mat-card-title>
+              <mat-card-subtitle><div class="overTextSuggestion">Voici le texte de ma publciation. C'est trop cool!! Don j'ecoute de la musique en travaillant et j'ecris du long texte pour tester si ça passe.</div></mat-card-subtitle>
+              <mat-card-subtitle><div class="overTextSuggestion">12/05/2022</div></mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-------------------AWARDS----------------------->
+
+<footer>
+  <app-footer></app-footer>
+</footer>
